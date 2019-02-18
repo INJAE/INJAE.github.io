@@ -1,0 +1,58 @@
+# Site Info
+title: InJae Dev Blog
+tagline: 'InJae Dev Blog'
+description: ''
+baseurl: ""
+url: http://injae.github.io
+#logo: '/public/logo.png'
+
+# Site configurations
+plugins:
+  - jekyll-paginate
+
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 8
+paginate_path: '/blog/page:num/'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: injae
+  description: 
+  contact:
+    #linkedin:  
+    github: https://github.com/injae
+    # facebook:  <hide>
+    #twitter:   
+    email: 8687lee@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'http://injae.github.io/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-129678112-1'
+disqus_short_name: 'injae' 
+
